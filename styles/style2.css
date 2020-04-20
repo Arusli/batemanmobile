@@ -1,0 +1,134 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Cormorant', serif;;
+	background-color: #0092b3;
+}
+.top-bar {
+	height: 100px;
+	background-color: #0092b3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-image {
+	width: 200px;
+}
+
+.photo-section {
+	height: 300px;
+	background-image: url("../images/hampton-beach-painting.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.about-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	background-color: #edf0f5;
+	line-height: 1.5rem;
+}
+.about-contents-wrapper {
+	width: 90%;
+}
+
+.about-section p {
+	font-size: 1.1rem;
+	text-align: left;
+}
+
+.wrapper {
+	
+}
+
+.footer {
+	margin: auto auto 0 auto;
+	font-size: .8rem;
+	text-align: center;
+	color: rgba(60, 60, 60, 30);
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+a:link {
+	color: #0092b3;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 900px) {
+	.top-bar {
+		height: 140px;
+	}
+
+	.logo-image {
+		width: 310px;
+	}
+
+	#main {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.photo-section {
+		flex: 1;
+		height: 425px;
+	}
+	.about-section {
+		flex: 2;
+		height: 425px;
+		background-image: url("../images/paintdripblue.png");
+		background-size: auto 65px;
+		background-repeat: no-repeat;
+		background-position: top right;
+		line-height: 1.8rem;
+	}
+
+.about-contents-wrapper {
+	max-width: 380px;
+}
+}
+
+@media (min-width: 900px) {
+
+	.top-bar {
+		height: 160px;
+	}
+	.logo-image {
+		width: 310px;
+	}
+
+	#main {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.photo-section,
+	.about-section {
+		flex: 1;
+		height: 425px;
+	}
+
+	.about-section {
+		background-image: url("../images/paintdripblue.png");
+		background-size: auto 80px;
+		background-repeat: no-repeat;
+		background-position: top right;
+		line-height: 1.8rem;
+
+	}
+
+	.about-contents-wrapper {
+	max-width: 380px;
+}
+}

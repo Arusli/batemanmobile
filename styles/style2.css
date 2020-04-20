@@ -9,7 +9,7 @@ body {
 	min-height: 100vh;
 	font-family: 'Cormorant', serif;;
 	background-color: #0092b3;
-	padding-top: 100px;
+	padding-top: 100px; /* sticky header related */
 }
 .top-bar {
 	height: 100px;
@@ -17,9 +17,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/* sticky header */
 	position: fixed;
 	top: 0;
-	width: 100%;
+	widtH: 100%;
 }
 
 .logo-image {
@@ -43,7 +44,7 @@ body {
 	line-height: 1.5rem;
 }
 .about-contents-wrapper {
-	width: 90%;
+	width: 85%;
 }
 
 .about-section p {
@@ -68,7 +69,9 @@ a:link {
 	color: #0092b3;
 }
 
-/* Media Queries */
+
+/* MEDIA QUERIES */
+
 
 @media (min-width: 768px) and (max-width: 900px) {
 	
@@ -104,9 +107,13 @@ a:link {
 		line-height: 1.8rem;
 	}
 
-.about-contents-wrapper {
+	.about-contents-wrapper {
 	max-width: 380px;
-}
+	}
+
+	.footer {
+		font-size: .9rem;
+	}
 }
 
 @media (min-width: 900px) {
@@ -145,5 +152,9 @@ a:link {
 
 	.about-contents-wrapper {
 	max-width: 380px;
-}
+	}
+
+	.footer {
+		font-size: .9rem;
+	}
 }

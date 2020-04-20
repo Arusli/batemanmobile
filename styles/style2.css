@@ -9,6 +9,7 @@ body {
 	min-height: 100vh;
 	font-family: 'Cormorant', serif;;
 	background-color: #0092b3;
+	padding-top: 100px;
 }
 .top-bar {
 	height: 100px;
@@ -16,6 +17,9 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: fixed;
+	top: 0;
+	widtH: 100%;
 }
 
 .logo-image {
@@ -67,7 +71,13 @@ a:link {
 /* Media Queries */
 
 @media (min-width: 768px) and (max-width: 900px) {
+	
+	body {
+		padding-top: 0px;
+	}
+
 	.top-bar {
+		position: static;
 		height: 140px;
 	}
 
@@ -101,7 +111,12 @@ a:link {
 
 @media (min-width: 900px) {
 
+	body {
+		padding-top: 0px;
+	}
+
 	.top-bar {
+		position: static;
 		height: 160px;
 	}
 	.logo-image {
